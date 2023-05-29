@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StokActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="vertical"
+        android:background="#3E3E3E">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Güncellemek istediğiniz ürünün stok kodunu giriniz"
+            android:textColor="#BABABA"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:background="#3E3E3E"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/stok_kodu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Stok Kodu"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/shape_text_background"
+                android:textColorHint="#BABABA"
+                android:textColor="#BABABA"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/stok_kodu_getir"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Getir"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/ripple_giris_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stok_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="#3E3E3E">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Ürün Adı:"
+            android:textColor="#BABABA"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/urun_isim_tv"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Ürün Adı"
+            android:textColorHint="#BABABA"
+            android:textColor="#BABABA"
+            android:background="@drawable/shape_text_background"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:text="Mevcut Stok Miktarı:"
+                android:textColor="#BABABA"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="Yeni Stok Miktarı:"
+                android:textColor="#BABABA"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/urun_mevcut_stok"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="15"
+                android:textColorHint="#BABABA"
+                android:textColor="#BABABA"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/shape_text_background"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/stok_miktar_edittext"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:textColorHint="#BABABA"
+                android:textColor="#BABABA"
+                android:background="@drawable/shape_text_background"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/stok_guncelle"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:text="Stok Güncelle"
+            android:textColor="@color/black"
+            android:background="@drawable/ripple_giris_button"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavi"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottomnavi"
+        android:background="#CF5260"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/black"
+        app:itemIconSize="30dp"/>
+
+</LinearLayout>

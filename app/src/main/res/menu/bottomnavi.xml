@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Ürünler"
+        android:id="@+id/urunler"
+        android:icon="@drawable/urunler"/>
+    <item android:title="Stok"
+        android:id="@+id/stok"
+        android:icon="@drawable/stok"/>
+    <item android:title="Güncelleme"
+        android:id="@+id/guncelleme"
+        android:icon="@drawable/guncelleme"/>
+</menu>

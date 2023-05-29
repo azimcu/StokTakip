@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UrunGuncelleActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#3E3E3E">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Güncellemek istediğiniz ürünün stok kodunu giriniz:"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#BABABA"/>
+
+    <EditText
+        android:id="@+id/stok_kodu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Ürün stok kodu"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/shape_text_background"
+        android:textColorHint="#BABABA"
+        android:textColor="#BABABA"
+        android:paddingHorizontal="10dp"/>
+
+    <Button
+        android:id="@+id/urun_getir_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Ürünü Getir"
+        android:textSize="15sp"
+        android:background="@drawable/ripple_giris_button"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ürün adı:"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#BABABA"/>
+
+    <EditText
+        android:id="@+id/urun_isim"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Ürün adı"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/shape_text_background"
+        android:textColorHint="#BABABA"
+        android:textColor="#BABABA"
+        android:paddingHorizontal="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Ürün stok miktarı:"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textColor="#BABABA"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Ürün satış fiyatı:"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:textColor="#BABABA"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/stok_miktar"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:hint="Ürün stok miktarı"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/shape_text_background"
+            android:textColorHint="#BABABA"
+            android:textColor="#BABABA"
+            android:paddingHorizontal="10dp"/>
+
+        <EditText
+            android:id="@+id/satis_fiyat"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:hint="Ürün satış fiyatı"
+            android:textSize="15sp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/shape_text_background"
+            android:textColorHint="#BABABA"
+            android:textColor="#BABABA"
+            android:paddingHorizontal="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/urun_guncelle_button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Ürün Güncelle"
+            android:textSize="15sp"
+            android:background="@drawable/ripple_giris_button"/>
+
+        <Button
+            android:id="@+id/geri_button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Geri Dön"
+            android:textSize="15sp"
+            android:background="@drawable/ripple_giris_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>

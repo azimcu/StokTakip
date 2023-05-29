@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <RelativeLayout
+        android:id="@+id/loginpic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:background="#CF5260">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="230dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/azimyolcom_logo"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/loginpanel"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="450dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Hoşgeldiniz"
+                    android:textSize="27sp"
+                    android:textColor="#BABABA"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="Lütfen kaydolmak için bilgilerinizi giriniz"
+                    android:textSize="16sp"
+                    android:textColor="#BABABA"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/email_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="****@****.com"
+                    android:textSize="18sp"
+                    android:textColorHint="#BABABA"
+                    android:textColor="#BABABA"
+                    android:background="@drawable/shape_text_background"/>
+
+                <EditText
+                    android:id="@+id/sifre_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:hint="Şifre"
+                    android:textSize="18sp"
+                    android:textColorHint="#BABABA"
+                    android:textColor="#BABABA"
+                    android:background="@drawable/shape_text_background"/>
+
+                <Button
+                    android:id="@+id/kayit_button"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="50dp"
+                    android:text="Kayıt Ol"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/ripple_giris_button"/>
+
+                <Button
+                    android:id="@+id/geri_button"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="50dp"
+                    android:text="Geri Dön"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/ripple_giris_button"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/facebook_svgrepo_com"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/instagram_svgrepo_com"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/youtube_svgrepo_com"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
